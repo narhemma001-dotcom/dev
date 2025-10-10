@@ -1,4 +1,2 @@
-import pandas as pd
-
-data = pd.read_csv('student-mat.csv')
+print("hello world")
 
