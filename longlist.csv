@@ -1,0 +1,61 @@
+SL. NO.,YEAR,WINNER,NOVEL,LENGTH OF BOOK,LENGTH OF BOOK BIN,GENDER,BIRTH YEAR,AGE WHEN WON,AGE BIN,GENRE ,NATIONALITY AT TIME OF VICTORY,COUNTRY OF BIRTH,PUBLISHER,ALMA MATER,BOOK NO. THAT WON (Only fiction novels)
+1,1969,P. H. Newby,Something to Answer For,284,300,M,1918,51,55,Mystery,British,UK,Faber & Faber,St Paul's College of Education,17
+2,1970,Bernice Rubens,The Elected Member,224,300,F,1923,47,50,Domestic,British,UK,Eyre & Spottiswoode,University of Wales,5
+3,1971,V. S. Naipaul,In a Free State,192,200,M,1932,39,40,Historical,British,Trinidad,Deutsch,Oxford,8
+4,1972,John Berger,G.,336,400,M,1926,46,50,Experimental ,British,UK,Weidenfeld & Nicolson, Central School of Art and Design,4
+5,1973,J. G. Farrell,The Siege of Krishnapur,400,400,M,1935,38,40,Historical,British,UK,Weidenfeld & Nicolson,Oxford,5
+6,1974,Nadine Gordimer,The Conservationist,336,400,F,1923,51,55,Political,South African,South Africa,Jonathan Cape,Did not Graduate,6
+7,1974,Stanley Middleton,Holiday,256,300,M,1919,55,55,Contemporary,British,UK,Hutchinson,University of Nottingham,14
+8,1975,Ruth Prawer Jhabvala,Heat and Dust,192,200,F,1927,48,50,Historical,British,Germany,John Murray,Queen Mary University,8
+9,1976,David Storey,Saville,560,600,M,1933,43,45,Historical,British,UK,Jonathan Cape,Slade School of Fine Art,15
+10,1977,Paul Scott,Staying On,256,300,M,1920,57,60,Historical,British,UK,Heinemann,Did not Attend,13
+11,1978,Iris Murdoch,"The Sea, the Sea",560,600,F,1919,59,60,Philosophical ,British,Ireland,Chatto & Windus,Cambridge,19
+13,1979,Penelope Fitzgerald,Offshore,144,200,F,1916,63,65,Contemporary,British,UK,Collins,Oxford,3
+14,1980,William Golding,Rites of Passage,288,300,M,1911,69,70,Historical,British,UK,Faber & Faber,Oxford,10
+15,1981,Salman Rushdie,Midnight's Children,672,700,M,1947,34,35,Magic realism,British,India,Jonathan Cape,Cambridge,2
+16,1982,Thomas Keneally,Schindler's Ark,432,500,M,1935,47,50,Biographical ,Australian,Australia,Hodder & Stoughton,St Patricks' Seminary,16
+17,1983,J. M. Coetzee,Life & Times of Michael K,192,200,M,1940,43,45,War,South African,South Africa,Secker & Warburg,University of Texas,4
+18,1984,Anita Brookner,Hotel du Lac,192,200,F,1928,56,60,Contemporary,British,UK,Jonathan Cape,King's College,4
+19,1985,Keri Hulme,The Bone People,546,600,F,1947,38,40,Mystery,New Zealander,New Zealand,Hodder & Stoughton,Did not Graduate,1
+20,1986,Kingsley Amis,The Old Devils,384,400,M,1922,64,65,Comic,British,UK,Hutchinson,Oxford,18
+21,1987,Penelope Lively,Moon Tiger,224,300,F,1933,54,55,War,British,Egypt,Deutsch,Oxford,7
+22,1988,Peter Carey,Oscar and Lucinda,544,600,M,1943,45,45,Historical,Australian,Australia,Faber & Faber,Did not Graduate,3
+23,1989,Kazuo Ishiguro,The Remains of the Day,272,300,M,1954,35,35,Historical,British,Japan,Faber & Faber,University of East Anglia,3
+24,1990,A. S. Byatt,Possession,528,600,F,1936,54,55,Historical,British,UK,Chatto & Windus,Oxford,5
+25,1991,Ben Okri,The Famished Road,592,600,M,1959,32,35,Magic realism,Nigerian,Nigeria,Jonathan Cape,Did not Graduate,3
+26,1992,Michael Ondaatje,The English Patient,321,400,M,1943,49,50,Historical,Canadian,Sri Lanka,Bloomsbury,Queen's University,3
+28,1992,Barry Unsworth,Sacred Hunger,640,700,M,1930,62,65,Historical,British,UK,Hamish Hamilton,University of Manchester,10
+29,1993,Roddy Doyle,Paddy Clarke Ha Ha Ha,288,300,M,1958,35,35,Contemporary,British,Ireland,Secker & Warburg,University College Dublin,4
+30,1994,James Kelman,"How Late It Was, How Late",384,400,M,1946,48,50,Stream of consciousness,British,UK,Secker & Warburg,University of Strathclyde,4
+31,1995,Pat Barker,The Ghost Road,288,300,F,1943,52,55,War,British,UK,Viking,London School of Economics,7
+32,1996,Graham Swift,Last Orders,304,400,M,1949,47,50,Contemporary,British,UK,Picador,Cambridge,6
+33,1997,Arundhati Roy,The God of Small Things,368,400,F,1961,36,40,Historical,Indian,India,Flamingo,"School of Planning and Architecture, New Delhi",1
+34,1998,Ian McEwan,Amsterdam,192,200,M,1948,50,50,Contemporary,British,UK ,Jonathan Cape,University of East Anglia,7
+35,1999,J. M. Coetzee,Disgrace,220,300,M,1940,59,60,Contemporary,South African,South Africa,Secker & Warburg,University of Texas,9
+36,2000,Margaret Atwood,The Blind Assassin,656,700,F,1939,61,65,Historical,Canadian,Canada,Bloomsbury,Radcliffe College,10
+37,2001,Peter Carey,True History of the Kelly Gang,432,500,M,1943,58,60,Historical,Australian,Australia,Faber & Faber,Did not Graduate,7
+38,2002,Yann Martel,Life of Pi,460,500,M,1963,39,40,Fantasy,Canadian,Spain,Canongate,Trent University,2
+39,2003,DBC Pierre,Vernon God Little,288,300,M,1961,42,45,Black comedy,Australian,Australia,Faber & Faber,Did not Attend,1
+40,2004,Alan Hollinghurst,The Line of Beauty,300,300,M,1954,50,50,Historical,British,UK,Picador,Oxford,4
+41,2005,John Banville,The Sea,272,300,M,1945,60,60,Contemporary,British,Ireland,Picador,Did not Attend,14
+42,2006,Kiran Desai,The Inheritance of Loss,336,400,F,1971,35,35,Contemporary,Indian,India,Hamish Hamilton,Columbia University,2
+43,2007,Anne Enright,The Gathering,272,300,F,1962,45,45,Contemporary,British,Ireland,Jonathan Cape,University of East Anglia,4
+44,2008,Aravind Adiga,The White Tiger,363,400,M,1974,34,35,Picaresque,Indian,India,Atlantic,Oxford,1
+45,2009,Hilary Mantel,Wolf Hall,674,700,F,1952,57,60,Historical,British,UK,4th Estate,University of Sheffield,10
+46,2010,Howard Jacobson,The Finkler Question,384,400,M,1942,68,70,Comic,British,UK,Bloomsbury,Cambridge,11
+47,2011,Julian Barnes,The Sense of an Ending,160,200,M,1946,65,65,Mystery,British,UK,Jonathan Cape,Oxford,11
+48,2012,Hilary Mantel,Bring Up the Bodies,432,500,F,1952,60,60,Historical,British,UK,4th Estate,University of Sheffield,11
+49,2013,Eleanor Catton,The Luminaries,832,900,F,1985,28,30,Historical,New Zealander,Canada,Granta,Victoria University of Wellington,2
+50,2014,Richard Flanagan,The Narrow Road to the Deep North,464,500,M,1961,53,55,Historical,Australian,Australia,Chatto & Windus,Oxford,6
+51,2015,Marlon James,A Brief History of Seven Killings,688,700,M,1970,45,45,Historical,Jamaican,Jamaica,Oneworld Publications,Wilkes University,3
+52,2016,Paul Beatty,The Sellout,304,400,M,1962,54,55,Satirical,American,US,Oneworld,Boston University,4
+53,2017,George Saunders,Lincoln in the Bardo,368,400,M,1958,59,60,Historical,American,US,Bloomsbury,Syracuse University,1
+54,2018,Anna Burns,Milkman,368,400,F,1962,56,60,Historical,British,Ireland,Faber & Faber,Did not Attend,3
+55,2019,Margaret Atwood,The Testaments,432,500,F,1939,80,80,Dystopian,Canadian,Canada,Chatto & Windus,Radcliffe College,18
+56,2019,Bernardine Evaristo,"Girl, Woman, Other",464,500,F,1959,60,60,Experimental ,British,UK,Hamish Hamilton,University of London,7
+57,2020,Douglas Stuart,Shuggie Bain,448,500,M,1976,44,45,Contemporary,British,Ireland,Picador,Royal College of Art,1
+59,2021,Damon Galgut,The Promise,242,300,M,1963,58,60,Historical,South African,South Africa,Chatto & Windus,University of Cape Town,5
+60,2022,Shehan Karunatilaka,The Seven Moons of Maali Almeida,368,400,M,1975,47,50,Magic realism,Sri Lankan,Sri Lanka,Sort of Books,Massey University,3
+61,2023,Paul Lynch,Prophet Song,320,400,M,1977,46,50,Dystopian,British,Ireland,Oneworld Publications,Did not Attend,5
+,,,,,,,,,,,,,,,
+,,,,,,F=20,,,,,,,,,
