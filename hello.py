@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import tensorflow as tf
 from sklearn.preprocessing import StandardScaler
 from imblearn.over_sampling import RandomOverSampler
 from sklearn.linear_model import LogisticRegression
@@ -32,10 +33,36 @@ x_train, y_train= scale_data(train, oversample=True)
 x_test, y_test= scale_data(test)
 x_validate, y_validate= scale_data(validate)
 
-model= SVC()
-model.fit(x_train,y_train)
 
-y_pred= model.predict(x_test)
+def plot_loss(history):
+    plt.plot(history.history['loss'], label= 'loss')
+    plt.plot(history.history['val_loss'], label= 'val_loss')
+    plt.xlabel('Epoch')
+    plt.ylabel('Binary crossentropy')
+    plt.legend()
+    plt.grid(True)
+    plt.show()
 
-print(classification_report(y_pred,y_test))
+def plot_accuracy(history):
+    plt.plot(history.history.get('accuracy', history.history.get('acc')), label='accuracy')
+    if 'val_accuracy' in history.history or 'val_acc' in history.history:
+        plt.plot(history.history.get('val_accuracy', history.history.get('val_acc')), label='val_accuracy')
+    plt.xlabel('Epoch')
+    plt.ylabel('Accuracy')
+    plt.legend()
+    plt.grid(True)
+    plt.show()    
 
+
+model= tf.keras.Sequential([
+    tf.keras.layers.Dense(32, activation= 'relu', input_shape = (10,)),
+    tf.keras.layers.Dense(32, activation= 'relu'),
+    tf.keras.layers.Dense(1, activation= 'sigmoid')
+])
+
+model.compile(optimizer= tf.optimizers.Adam(0.001), loss= 'binary_crossentropy',
+              metrics= ['accuracy'])
+
+history = model.fit(
+    x_train,y_train, epochs= 100, batch_size= 32, validation_split= 0.2, verbose=0
+)
