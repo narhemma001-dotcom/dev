@@ -1,3 +1,4 @@
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -48,18 +49,23 @@ def plot_accuracy(history):
     plt.grid(True)
     plt.show()
 
-model = tf.keras.Sequential([
-    tf.keras.layers.Dense(32, activation='relu', input_shape=(10,)),
-    tf.keras.layers.Dense(32, activation='relu'),
-    tf.keras.layers.Dense(1, activation='sigmoid')
+
+model= tf.keras.Sequential([
+    tf.keras.layers.Dense(16, activation= 'relu'),
+    tf.keras.layers.Dense(16, activation= 'relu'),
+    tf.keras.layers.Dense(1, activation= 'sigmoid')
 ])
 
-model.compile(optimizer=tf.optimizers.Adam(0.001), loss='binary_crossentropy', metrics=['accuracy'])
-
-history = model.fit(
-    x_train, y_train,
-    epochs=100,
-    batch_size=32,
-    validation_split=0.2,
-    verbose=0
+model.compile(optimizer= tf.keras.optimizers.Adam(learning_rate=0.001),
+              loss= tf.keras.losses.BinaryCrossentropy(),
+              metrics=['accuracy']
 )
+
+model.fit(x_train, y_train, batch_size=16,epochs=20, validation_data=(x_validate,y_validate) )
+
+model.evaluate(x_test,y_test)
+
+y_pred= model.predict(x_test)
+y_pred_class= np.round(y_pred).astype(int)
+
+print(classification_report(y_test,y_pred_class))

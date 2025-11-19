@@ -19,7 +19,7 @@ class Telecel:
             "account_num":None
         }
         while True:
-            pin =input("Create a 4-digit pin: ")
+            pin =input("Create a 4-digit pin: ").strip()
             if re.fullmatch(r"^\d{4}$",pin):       
                 user_info["momo_pin"]= pin
                 self.momo_pin = pin    
@@ -32,7 +32,7 @@ class Telecel:
     
     
     def check_pin(self,mode = None):
-        pin =input("Enter the 4-digit pin: ")
+        pin =input("Enter the 4-digit pin: ").strip()
         if re.fullmatch(r"^\d{4}$",pin) and pin == self.momo_pin:
             return True
         elif re.fullmatch(r"^\d{4}$",pin) != self.momo_pin:
@@ -43,7 +43,7 @@ class Telecel:
         
     def check_telestarNum(self,mode = None):
         while True:
-            phone_num = input("Enter recipient's phone number: ")
+            phone_num = input("Enter recipient's phone number: ").strip()
             if re.fullmatch(r"^(059)\d{7}$",phone_num):
                 pass
                 break
@@ -52,7 +52,7 @@ class Telecel:
 
     def check_otherNum(self,mode= None):
         while True:
-            phone_num = input("Enter recipient's phone number: ")
+            phone_num = input("Enter recipient's phone number: ").strip()
             if re.fullmatch(r"^(050|026|023)\d{7}$",phone_num):
                 pass
                 break
