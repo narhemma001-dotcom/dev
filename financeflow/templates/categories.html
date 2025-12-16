@@ -1,0 +1,40 @@
+
+{% extends 'base.html' %}
+{% block content %}
+<div class="categories-container">
+    <h2 class="categories-title">Your Categories</h2>
+    
+    <div class="categories-content">
+        <table class="categories-table">
+            <thead>
+                <tr>
+                    <th>Category Name</th>
+                    <th>Number of Expenses</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for category in categories %}
+                <tr class="category-row">
+                    <td class="category-name">{{ category.get_name_display }}</td>
+                    <td class="expense-count">{{ category.expense_set.count }}</td>
+                </tr>
+                {% empty %}
+                <tr>
+                    <td colspan="2" class="no-categories">
+                        No categories yet. Add your first expense to create categories!
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="action-buttons">
+        <a href="{% url 'add_expense' %}" class="btn-add-expense">
+            Add New Expense
+        </a>
+    </div>
+</div>
+
+
+{% endblock %}

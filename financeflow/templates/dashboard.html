@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="dashboard-container">
+    <!-- Welcome Header -->
+    <header class="dashboard-header">
+        <h1>💰 Your Financial Dashboard</h1>
+        <p class="date-display">Today is {{ today|date:"F j, Y" }}</p>
+    </header>
+
+    <!-- Summary Cards -->
+    <div class="summary-grid">
+        <!-- Monthly Spending Card -->
+        <div class="summary-card monthly">
+            <div class="card-icon">📅</div>
+            <h3>This Month</h3>
+            <p class="amount">${{ monthly_total|floatformat:2 }}</p>
+            <p class="card-subtitle">Total spending this month</p>
+        </div>
+
+        <!-- Today's Spending Card -->
+        <div class="summary-card today">
+            <div class="card-icon">🕒</div>
+            <h3>Today</h3>
+            <p class="amount">${{ today_total|floatformat:2 }}</p>
+            <p class="card-subtitle">Spent today</p>
+        </div>
+
+        <!-- Quick Add Card -->
+        <div class="summary-card quick-add">
+            <div class="card-icon">⚡</div>
+            <h3>Quick Add</h3>
+            <a href="{% url 'add_expense' %}" class="add-btn">+ Add Expense</a>
+            <p class="card-subtitle">Add new expense quickly</p>
+        </div>
+    </div>
+
+    <!-- Recent Expenses Section -->
+    <section class="recent-section">
+        <div class="section-header">
+            <h2>📋 Recent Expenses</h2>
+            <a href="{% url 'expense_list' %}" class="view-all">View All →</a>
+        </div>
+
+        {% if recent_expenses %}
+        <div class="expenses-list">
+            {% for expense in recent_expenses %}
+            <div class="expense-item">
+                <div class="expense-main">
+                    <span class="expense-category {{ expense.category }}">{{ expense.get_category_display }}</span>
+                    <span class="expense-desc">{{ expense.description|default:"No description" }}</span>
+                </div>
+                <div class="expense-details">
+                    <span class="expense-date">{{ expense.date|date:"M d" }}</span>
+                    <span class="expense-amount">${{ expense.amount|floatformat:2 }}</span>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <div class="empty-state">
+            <p>✨ No expenses yet. Add your first expense to see your dashboard come alive!</p>
+            <a href="{% url 'add_expense' %}" class="btn">Add First Expense</a>
+        </div>
+        {% endif %}
+    </section>
+
+    <!-- Quick Stats -->
+    <div class="quick-stats">
+        <div class="stat">
+            <span class="stat-label">Total Expenses</span>
+            <span class="stat-value">{{ recent_expenses|length }}</span>
+        </div>
+        <div class="stat">
+            <span class="stat-label">Average Daily</span>
+            <span class="stat-value">${{ daily_average|floatformat:2|default:"0.00" }}</span>
+        </div>
+    </div>
+</div>
+{% endblock %}

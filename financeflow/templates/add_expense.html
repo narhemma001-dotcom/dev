@@ -1,0 +1,39 @@
+
+{% extends 'base.html'%}
+{% block content %}
+    <div>
+        <form action="{% url 'add_expense' %}" method="post">
+            {% csrf_token %}
+            <h2 style="margin-top: 50px ;">ADD NEW EXPENSE</h2>
+            <div style="margin-top: 40px ;">
+                <label>Amount: $</label>
+                <input type="text" inputmode="decimal" pattern="^\d+(\.\d{0,2})?$" placeholder="0.00" class="input" name="amount">
+            </div>
+            <div style="margin-top: 20px;">
+                <label>Category: </label>
+                <select class="btn" style="color: black; " name="category" >
+                    <option value="" style="display: none;">Select a Category</option>
+                    <option  value="food">Food</option>
+                    <option  value="transportation">Transportation</option>
+                    <option  value="shopping">Shopping</option>
+                    <option  value="entertainment">Entertainment</option>
+                    <option  value="bills">Bills</option>
+                </select>
+            </div>
+           <div style="margin: 20px;">
+                <label>Date: </label>
+                <input type="date" class="input" name="date">
+           </div>
+           <div>
+                <label>Description: </label><br>
+                <textarea rows="4" class="Description-btn" name="description"></textarea>
+           </div>
+           <div style="margin-top: 20px;">
+                <button class="btn">Cancel</button>
+                <button class="btn">Save Expense</button>
+           </div>
+           
+           
+        </form>
+    </div>
+{% endblock %}

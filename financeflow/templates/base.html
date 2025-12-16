@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dashboard Page</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'login.css' %}">
+</head>
+<body>
+    <h1>FINANCEFLOW</h1>
+    <div>
+        <button class="btn" onclick='window.location.href="/";'>Dashboard</button>
+        <button class="btn" onclick='window.location.href="/add-expense";'>Add Expense</button>
+        <button class="btn" onclick='window.location.href="/expenses";'>My Expenses</button>
+        <button class="btn" onclick='window.location.href="/categories";'>Categories</button>
+        <button class="btn" onclick='window.location.href="/logout";'>Log Out</button>
+    </div>
+    <div id="main-content">
+        {% block content %}
+
+        {% endblock %}  
+    </div>
+</body>
+</html>
+
+
